@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(brainstorming)",
+      "Bash(scripts/start-server.sh *)",
+      "Bash(dir \"C:\\\\Users\\\\28670\\\\personal-homepage\\\\.superpowers\\\\brainstorm\\\\\" 2>nul)",
+      "Skill(writing-plans)",
+      "Bash(npm --version)",
+      "Bash(npm run *)",
+      "Skill(subagent-driven-development)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
