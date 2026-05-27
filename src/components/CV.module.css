@@ -1,0 +1,82 @@
+.cv {
+  padding: var(--section-padding);
+}
+
+.awardsTitle {
+  margin-top: 56px;
+}
+
+.timelineWrapper {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 32px;
+}
+
+.timelineWrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-gradient);
+  border-radius: 2px;
+}
+
+.item {
+  position: relative;
+  padding: 0 0 40px 32px;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  top: 6px;
+  left: -39px;
+  width: 14px;
+  height: 14px;
+  background: var(--color-primary);
+  border: 3px solid var(--color-card);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.institution {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .timelineWrapper {
+    padding-left: 24px;
+  }
+
+  .dot {
+    left: -31px;
+  }
+}

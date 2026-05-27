@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Timeline from './components/Timeline'
+import Research from './components/Research'
+import Publications from './components/Publications'
+import CV from './components/CV'
 import Footer from './components/Footer'
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Skills />
-        <Projects />
-        <Timeline />
+        <Research />
+        <Publications />
+        <CV />
       </main>
       <Footer />
     </>

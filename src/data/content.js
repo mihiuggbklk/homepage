@@ -1,98 +1,83 @@
-import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaDocker, FaFigma } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql, SiVite } from 'react-icons/si'
-
 export const personalInfo = {
-  name: 'Your Name',
-  tagline: 'Full-Stack Developer & Creative Problem Solver',
+  name: 'Yuqing He',
+  title: 'PhD Candidate',
+  institution: 'Zhejiang University',
+  department: 'School of Mathematical Sciences',
+  tagline: 'Machine Learning Theory · Optimization · Data Science',
   avatarUrl: '/avatar.png',
+  advisor: { name: 'Prof. Song Li', url: 'https://person.zju.edu.cn/0096094' },
+  bio: 'I am a PhD candidate at the School of Mathematical Sciences, Zhejiang University, advised by Prof. Song Li. My research focuses on the theoretical foundations of machine learning, with a particular interest in optimization algorithms and their convergence properties.',
 }
 
 export const navLinks = [
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'Research', href: '#research' },
+  { label: 'Publications', href: '#publications' },
+  { label: 'CV', href: '#cv' },
+  { label: 'Contact', href: '#contact' },
 ]
 
-export const skillCategories = [
+export const researchInterests = [
   {
-    category: 'Frontend',
-    skills: [
-      { name: 'React', icon: FaReact, level: 90 },
-      { name: 'JavaScript', icon: SiJavascript, level: 95 },
-      { name: 'TypeScript', icon: SiTypescript, level: 80 },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 85 },
-    ],
+    title: 'Optimization Theory',
+    description: 'Convergence analysis of non-smooth and spectral optimization methods, including Muon-type optimizers for large-scale machine learning.',
   },
   {
-    category: 'Backend',
-    skills: [
-      { name: 'Node.js', icon: FaNodeJs, level: 85 },
-      { name: 'Python', icon: FaPython, level: 80 },
-      { name: 'MongoDB', icon: SiMongodb, level: 75 },
-      { name: 'PostgreSQL', icon: SiPostgresql, level: 70 },
-    ],
+    title: 'Machine Learning Theory',
+    description: 'Theoretical guarantees for learning algorithms, including generalization bounds, robustness, and low-rank matrix recovery.',
   },
   {
-    category: 'Tools',
-    skills: [
-      { name: 'Git', icon: FaGitAlt, level: 90 },
-      { name: 'Docker', icon: FaDocker, level: 70 },
-      { name: 'Figma', icon: FaFigma, level: 65 },
-      { name: 'Vite', icon: SiVite, level: 85 },
-    ],
+    title: 'Data Science',
+    description: 'Mathematical foundations of data-driven methods, with applications in signal processing and high-dimensional statistics.',
   },
 ]
 
-export const projects = [
+export const publications = [
   {
-    title: 'Project Alpha',
-    description: 'A full-stack web application with real-time collaboration features and modern UI design.',
-    image: 'https://placehold.co/600x400/FF6B6B/FFFFFF?text=Project+Alpha',
-    tags: ['React', 'Node.js', 'WebSocket'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
-  {
-    title: 'Project Beta',
-    description: 'An AI-powered dashboard that visualizes data with interactive charts and smart insights.',
-    image: 'https://placehold.co/600x400/FFD93D/4D4D4D?text=Project+Beta',
-    tags: ['TypeScript', 'Python', 'D3.js'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
-  {
-    title: 'Project Gamma',
-    description: 'A mobile-first e-commerce platform with smooth animations and seamless checkout flow.',
-    image: 'https://placehold.co/600x400/6BCB77/FFFFFF?text=Project+Gamma',
-    tags: ['React', 'Tailwind', 'Stripe'],
-    github: 'https://github.com',
-    live: null,
+    title: 'Convergence of Spectral Descent for Non-smooth Optimization',
+    authors: ['Yixuan Yang', 'Yuqing He', 'Song Li'],
+    venue: 'arXiv preprint',
+    year: 2026,
+    abstract: 'We investigate Spectral Descent (SD), a simplified variant of the Muon optimizer, and its truncated counterpart (TSD). Under convexity, Lipschitz continuity, and sharpness conditions, we establish global linear convergence for both SD and TSD in non-smooth convex formulations. We also derive sublinear convergence guarantees through their connection with Frank-Wolfe methods and apply our framework to robust low-rank matrix recovery.',
+    links: [
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2605.26977' },
+    ],
   },
 ]
 
-export const timeline = [
+export const education = [
   {
-    date: '2023 - Present',
-    title: 'Company A',
-    role: 'Senior Frontend Developer',
-    description: 'Leading the frontend team, building scalable component libraries and improving performance.',
+    date: '2025 - Present',
+    institution: 'Zhejiang University',
+    degree: 'PhD in Applied Mathematics',
+    description: 'School of Mathematical Sciences. Advised by Prof. Song Li. Research focus on optimization theory and machine learning.',
   },
   {
-    date: '2021 - 2023',
-    title: 'Company B',
-    role: 'Full-Stack Developer',
-    description: 'Developed REST APIs and React-based dashboards for enterprise clients.',
+    date: '2021 - 2025',
+    institution: 'Zhejiang University',
+    degree: 'B.S. in Mathematics and Applied Mathematics',
+    description: 'School of Mathematical Sciences.',
+  },
+]
+
+export const awards = [
+  {
+    date: '2025',
+    title: 'Outstanding Graduate (University Level)',
+    institution: 'Zhejiang University',
   },
   {
-    date: '2017 - 2021',
-    title: 'University X',
-    role: 'B.S. Computer Science',
-    description: 'Focused on software engineering and human-computer interaction. Graduated with honors.',
+    date: '2023 - 2024',
+    title: 'Zhejiang University Scholarship - Third Prize',
+    institution: 'Zhejiang University',
+  },
+  {
+    date: '2022 - 2023',
+    title: 'Zhejiang University Scholarship - Second Prize',
+    institution: 'Zhejiang University',
   },
 ]
 
 export const socialLinks = [
+  { name: 'Email', url: 'mailto:yuqinghe25@zju.edu.cn' },
   { name: 'GitHub', url: 'https://github.com' },
-  { name: 'LinkedIn', url: 'https://linkedin.com' },
-  { name: 'Email', url: 'mailto:your@email.com' },
 ]

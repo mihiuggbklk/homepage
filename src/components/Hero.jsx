@@ -12,12 +12,28 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <h1 className={styles.greeting}>
-            Hi, I'm <span className={styles.highlight}>{personalInfo.name}</span>
+          <h1 className={styles.name}>
+            <span className={styles.highlight}>{personalInfo.name}</span>
           </h1>
+          <p className={styles.titleLine}>
+            {personalInfo.title},{' '}
+            <span className={styles.institution}>{personalInfo.institution}</span>
+          </p>
           <p className={styles.tagline}>{personalInfo.tagline}</p>
-          <a href="#projects" className={styles.cta}>
-            View My Work
+          <p className={styles.bio}>
+            I am a PhD candidate at the School of Mathematical Sciences, Zhejiang University, advised by{' '}
+            <a
+              href={personalInfo.advisor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.advisorLink}
+            >
+              {personalInfo.advisor.name}
+            </a>
+            . My research focuses on the theoretical foundations of machine learning, with a particular interest in optimization algorithms and their convergence properties.
+          </p>
+          <a href="#publications" className={styles.cta}>
+            View Publications
           </a>
         </motion.div>
 
@@ -32,9 +48,6 @@ function Hero() {
             alt={personalInfo.name}
             className={styles.avatar}
           />
-          <span className={`${styles.floatingEmoji} ${styles.emoji1}`}>&#x2728;</span>
-          <span className={`${styles.floatingEmoji} ${styles.emoji2}`}>&#x1F680;</span>
-          <span className={`${styles.floatingEmoji} ${styles.emoji3}`}>&#x1F3A8;</span>
         </motion.div>
       </div>
     </section>
